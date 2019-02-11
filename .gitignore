@@ -112,8 +112,6 @@ Temporary Items
 # files for the dex VM
 *.dex
 
-# Java class files
-*.class
 
 # generated files
 bin/
@@ -132,11 +130,4 @@ proguard/
 # Intellij project files
 *.iml
 *.ipr
-*.iws
 .idea/
-
-#Gradle
-.gradletasknamecache
-.gradle/
-build/
-bin/
