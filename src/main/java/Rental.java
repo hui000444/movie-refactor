@@ -5,8 +5,10 @@
  * @create 2019-2-11 10:35
  */
 public class Rental {
-    private Movie movie;              //租赁的影片
-    private int daysRented;           //租期
+    //租赁的影片
+    private Movie movie;
+    //租期
+    private int daysRented;
 
     public Rental(Movie movie, int daysRented) {
         this.movie = movie;
@@ -20,4 +22,13 @@ public class Rental {
     public int getDaysRented() {
         return daysRented;
     }
+
+    public double getCharge() {
+        return getMovie().getCharge(getDaysRented());
+    }
+
+    public int getFrequentRenterPoints() {
+        return getMovie().getFrequentRenterPoints(getDaysRented());
+    }
+
 }
